@@ -1,0 +1,67 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="testEntity">
+            <h2><span>Test Entity</span> {{testEntity.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span>Record Id</span></dt>
+                <dd>
+                    <span>{{testEntity.recordId}}</span>
+                </dd>
+                <dt><span>Lable</span></dt>
+                <dd>
+                    <span>{{testEntity.lable}}</span>
+                </dd>
+                <dt><span>Title</span></dt>
+                <dd>
+                    <span>{{testEntity.title}}</span>
+                </dd>
+                <dt><span>Url</span></dt>
+                <dd>
+                    <span>{{testEntity.url}}</span>
+                </dd>
+                <dt><span>Show Icon</span></dt>
+                <dd>
+                    <span>{{testEntity.showIcon}}</span>
+                </dd>
+                <dt><span>Icon</span></dt>
+                <dd>
+                    <span>{{testEntity.icon}}</span>
+                </dd>
+                <dt><span>Divider</span></dt>
+                <dd>
+                    <span>{{testEntity.divider}}</span>
+                </dd>
+                <dt><span>Sort Order</span></dt>
+                <dd>
+                    <span>{{testEntity.sortOrder}}</span>
+                </dd>
+                <dt><span>Type</span></dt>
+                <dd>
+                    <span>{{testEntity.type}}</span>
+                </dd>
+                <dt><span>Product Id</span></dt>
+                <dd>
+                    <span>{{testEntity.productId}}</span>
+                </dd>
+                <dt><span>User Id</span></dt>
+                <dd>
+                    <span>{{testEntity.userId}}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/test-entity', testEntity.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

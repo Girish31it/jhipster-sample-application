@@ -1,0 +1,47 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="employee">
+            <h2><span>Employee</span> {{employee.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span>Record Id</span></dt>
+                <dd>
+                    <span>{{employee.recordId}}</span>
+                </dd>
+                <dt><span>F Name</span></dt>
+                <dd>
+                    <span>{{employee.fName}}</span>
+                </dd>
+                <dt><span>L Name</span></dt>
+                <dd>
+                    <span>{{employee.lName}}</span>
+                </dd>
+                <dt><span>Gender</span></dt>
+                <dd>
+                    <span>{{employee.gender}}</span>
+                </dd>
+                <dt><span>Dob</span></dt>
+                <dd>
+                    <span>{{employee.dob}}</span>
+                </dd>
+                <dt><span>Dept</span></dt>
+                <dd>
+                    <span>{{employee.dept}}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/employee', employee.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

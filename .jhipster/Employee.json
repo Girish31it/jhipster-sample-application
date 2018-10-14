@@ -1,0 +1,39 @@
+{
+    "name": "Employee",
+    "fields": [
+        {
+            "fieldName": "recordId",
+            "fieldType": "Long"
+        },
+        {
+            "fieldName": "fName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "lName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "gender",
+            "fieldType": "Boolean"
+        },
+        {
+            "fieldName": "dob",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "dept",
+            "fieldType": "String"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20181014083152",
+    "entityTableName": "employee",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}

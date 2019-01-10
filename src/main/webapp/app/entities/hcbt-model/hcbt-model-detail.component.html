@@ -1,0 +1,427 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <div *ngIf="hCBTModel">
+            <h2><span>HCBT Model</span> {{hCBTModel.id}}</h2>
+            <hr>
+            <jhi-alert-error></jhi-alert-error>
+            <dl class="row-md jh-entity-details">
+                <dt><span>Vendor Name</span></dt>
+                <dd>
+                    <span>{{hCBTModel.vendorName}}</span>
+                </dd>
+                <dt><span>Vendor Location</span></dt>
+                <dd>
+                    <span>{{hCBTModel.vendorLocation}}</span>
+                </dd>
+                <dt><span>Service Pillar</span></dt>
+                <dd>
+                    <span>{{hCBTModel.servicePillar}}</span>
+                </dd>
+                <dt><span>Service Category</span></dt>
+                <dd>
+                    <span>{{hCBTModel.serviceCategory}}</span>
+                </dd>
+                <dt><span>Service Drilldown</span></dt>
+                <dd>
+                    <span>{{hCBTModel.serviceDrilldown}}</span>
+                </dd>
+                <dt><span>Sow Name</span></dt>
+                <dd>
+                    <span>{{hCBTModel.sowName}}</span>
+                </dd>
+                <dt><span>Sow Number</span></dt>
+                <dd>
+                    <span>{{hCBTModel.sowNumber}}</span>
+                </dd>
+                <dt><span>Po Number</span></dt>
+                <dd>
+                    <span>{{hCBTModel.poNumber}}</span>
+                </dd>
+                <dt><span>Delivery Poc</span></dt>
+                <dd>
+                    <span>{{hCBTModel.deliveryPoc}}</span>
+                </dd>
+                <dt><span>Cisco Business Owner</span></dt>
+                <dd>
+                    <span>{{hCBTModel.ciscoBusinessOwner}}</span>
+                </dd>
+                <dt><span>Chrgble Agent Num Wdnm Cases</span></dt>
+                <dd>
+                    <span>{{hCBTModel.chrgbleAgentNumWdnmCases}}</span>
+                </dd>
+                <dt><span>Projected Billable Heads M 1</span></dt>
+                <dd>
+                    <span>{{hCBTModel.projectedBillableHeadsM1}}</span>
+                </dd>
+                <dt><span>Projected Billable Heads M 2</span></dt>
+                <dd>
+                    <span>{{hCBTModel.projectedBillableHeadsM2}}</span>
+                </dd>
+                <dt><span>Projected Billable Heads M 3</span></dt>
+                <dd>
+                    <span>{{hCBTModel.projectedBillableHeadsM3}}</span>
+                </dd>
+                <dt><span>Fte Hourly Rate Dollar</span></dt>
+                <dd>
+                    <span>{{hCBTModel.fteHourlyRateDollar}}</span>
+                </dd>
+                <dt><span>Projected Tbp Volume M 1</span></dt>
+                <dd>
+                    <span>{{hCBTModel.projectedTbpVolumeM1}}</span>
+                </dd>
+                <dt><span>Projected Tbp Volume M 2</span></dt>
+                <dd>
+                    <span>{{hCBTModel.projectedTbpVolumeM2}}</span>
+                </dd>
+                <dt><span>Projected Tbp Volume M 3</span></dt>
+                <dd>
+                    <span>{{hCBTModel.projectedTbpVolumeM3}}</span>
+                </dd>
+                <dt><span>Projected Other Vol M 1</span></dt>
+                <dd>
+                    <span>{{hCBTModel.projectedOtherVolM1}}</span>
+                </dd>
+                <dt><span>Projected Other Vol M 2</span></dt>
+                <dd>
+                    <span>{{hCBTModel.projectedOtherVolM2}}</span>
+                </dd>
+                <dt><span>Projected Other Vol M 3</span></dt>
+                <dd>
+                    <span>{{hCBTModel.projectedOtherVolM3}}</span>
+                </dd>
+                <dt><span>Aht In Minutes</span></dt>
+                <dd>
+                    <span>{{hCBTModel.ahtInMinutes}}</span>
+                </dd>
+                <dt><span>Dollar Rate Per Minute</span></dt>
+                <dd>
+                    <span>{{hCBTModel.dollarRatePerMinute}}</span>
+                </dd>
+                <dt><span>Other Volume Rate</span></dt>
+                <dd>
+                    <span>{{hCBTModel.otherVolumeRate}}</span>
+                </dd>
+                <dt><span>Inf Milestone Value M 1 Non Usd</span></dt>
+                <dd>
+                    <span>{{hCBTModel.infMilestoneValueM1NonUsd}}</span>
+                </dd>
+                <dt><span>Inf Milestone Value M 2 Non Usd</span></dt>
+                <dd>
+                    <span>{{hCBTModel.infMilestoneValueM2NonUsd}}</span>
+                </dd>
+                <dt><span>Inf Milestone Value M 3 Non Usd</span></dt>
+                <dd>
+                    <span>{{hCBTModel.infMilestoneValueM3NonUsd}}</span>
+                </dd>
+                <dt><span>Inf Buffer Non Usd</span></dt>
+                <dd>
+                    <span>{{hCBTModel.infBufferNonUsd}}</span>
+                </dd>
+                <dt><span>Inf Po Amount Non Usd</span></dt>
+                <dd>
+                    <span>{{hCBTModel.infPoAmountNonUsd}}</span>
+                </dd>
+                <dt><span>Milestone Value M 1 Usd</span></dt>
+                <dd>
+                    <span>{{hCBTModel.milestoneValueM1Usd}}</span>
+                </dd>
+                <dt><span>Milestone Value M 2 Usd</span></dt>
+                <dd>
+                    <span>{{hCBTModel.milestoneValueM2Usd}}</span>
+                </dd>
+                <dt><span>Milestone Value M 3 Usd</span></dt>
+                <dd>
+                    <span>{{hCBTModel.milestoneValueM3Usd}}</span>
+                </dd>
+                <dt><span>Buffer Usd</span></dt>
+                <dd>
+                    <span>{{hCBTModel.bufferUsd}}</span>
+                </dd>
+                <dt><span>Po Amount Usd</span></dt>
+                <dd>
+                    <span>{{hCBTModel.poAmountUsd}}</span>
+                </dd>
+                <dt><span>Actual Billable Heads M 1</span></dt>
+                <dd>
+                    <span>{{hCBTModel.actualBillableHeadsM1}}</span>
+                </dd>
+                <dt><span>Pay Act Billable Hours M 1</span></dt>
+                <dd>
+                    <span>{{hCBTModel.payActBillableHoursM1}}</span>
+                </dd>
+                <dt><span>Actual Billable Heads M 2</span></dt>
+                <dd>
+                    <span>{{hCBTModel.actualBillableHeadsM2}}</span>
+                </dd>
+                <dt><span>Pay Act Billable Hours M 2</span></dt>
+                <dd>
+                    <span>{{hCBTModel.payActBillableHoursM2}}</span>
+                </dd>
+                <dt><span>Actual Billable Heads M 3</span></dt>
+                <dd>
+                    <span>{{hCBTModel.actualBillableHeadsM3}}</span>
+                </dd>
+                <dt><span>Pay Act Billable Hours M 3</span></dt>
+                <dd>
+                    <span>{{hCBTModel.payActBillableHoursM3}}</span>
+                </dd>
+                <dt><span>Actual Tbp Volume M 1</span></dt>
+                <dd>
+                    <span>{{hCBTModel.actualTbpVolumeM1}}</span>
+                </dd>
+                <dt><span>Actual Tbp Volume M 2</span></dt>
+                <dd>
+                    <span>{{hCBTModel.actualTbpVolumeM2}}</span>
+                </dd>
+                <dt><span>Actual Tbp Volume M 3</span></dt>
+                <dd>
+                    <span>{{hCBTModel.actualTbpVolumeM3}}</span>
+                </dd>
+                <dt><span>Actual Other Vol M 1</span></dt>
+                <dd>
+                    <span>{{hCBTModel.actualOtherVolM1}}</span>
+                </dd>
+                <dt><span>Actual Other Vol M 2</span></dt>
+                <dd>
+                    <span>{{hCBTModel.actualOtherVolM2}}</span>
+                </dd>
+                <dt><span>Actual Other Vol M 3</span></dt>
+                <dd>
+                    <span>{{hCBTModel.actualOtherVolM3}}</span>
+                </dd>
+                <dt><span>Billing Adj Hitting M 1</span></dt>
+                <dd>
+                    <span>{{hCBTModel.billingAdjHittingM1}}</span>
+                </dd>
+                <dt><span>Billing Adj Hitting M 2</span></dt>
+                <dd>
+                    <span>{{hCBTModel.billingAdjHittingM2}}</span>
+                </dd>
+                <dt><span>Billing Adj Hitting M 3</span></dt>
+                <dd>
+                    <span>{{hCBTModel.billingAdjHittingM3}}</span>
+                </dd>
+                <dt><span>Actual Spend M 1 Usd</span></dt>
+                <dd>
+                    <span>{{hCBTModel.actualSpendM1Usd}}</span>
+                </dd>
+                <dt><span>Actual Spend M 2 Usd</span></dt>
+                <dd>
+                    <span>{{hCBTModel.actualSpendM2Usd}}</span>
+                </dd>
+                <dt><span>Actual Spend M 3 Usd</span></dt>
+                <dd>
+                    <span>{{hCBTModel.actualSpendM3Usd}}</span>
+                </dd>
+                <dt><span>Total Qtrly Spend Usd</span></dt>
+                <dd>
+                    <span>{{hCBTModel.totalQtrlySpendUsd}}</span>
+                </dd>
+                <dt><span>Actual Proj M 1 Diff Usd</span></dt>
+                <dd>
+                    <span>{{hCBTModel.actualProjM1DiffUsd}}</span>
+                </dd>
+                <dt><span>Actual Proj M 2 Diff Usd</span></dt>
+                <dd>
+                    <span>{{hCBTModel.actualProjM2DiffUsd}}</span>
+                </dd>
+                <dt><span>Actual Proj M 3 Diff Usd</span></dt>
+                <dd>
+                    <span>{{hCBTModel.actualProjM3DiffUsd}}</span>
+                </dd>
+                <dt><span>Actual Milestone M 3 Diff Per</span></dt>
+                <dd>
+                    <span>{{hCBTModel.actualMilestoneM3DiffPer}}</span>
+                </dd>
+                <dt><span>Actual Po Value Diff Per</span></dt>
+                <dd>
+                    <span>{{hCBTModel.actualPoValueDiffPer}}</span>
+                </dd>
+                <dt><span>Retrospective Adj M 1</span></dt>
+                <dd>
+                    <span>{{hCBTModel.retrospectiveAdjM1}}</span>
+                </dd>
+                <dt><span>Retrospective Adj M 2</span></dt>
+                <dd>
+                    <span>{{hCBTModel.retrospectiveAdjM2}}</span>
+                </dd>
+                <dt><span>Retrospective Adj M 3</span></dt>
+                <dd>
+                    <span>{{hCBTModel.retrospectiveAdjM3}}</span>
+                </dd>
+                <dt><span>Actual Retrospective Cost M 1</span></dt>
+                <dd>
+                    <span>{{hCBTModel.actualRetrospectiveCostM1}}</span>
+                </dd>
+                <dt><span>Actual Retrospective Cost M 2</span></dt>
+                <dd>
+                    <span>{{hCBTModel.actualRetrospectiveCostM2}}</span>
+                </dd>
+                <dt><span>Actual Retrospective Cost M 3</span></dt>
+                <dd>
+                    <span>{{hCBTModel.actualRetrospectiveCostM3}}</span>
+                </dd>
+                <dt><span>Total Qtrly Retrospective Cost</span></dt>
+                <dd>
+                    <span>{{hCBTModel.totalQtrlyRetrospectiveCost}}</span>
+                </dd>
+                <dt><span>Change Impact</span></dt>
+                <dd>
+                    <span>{{hCBTModel.changeImpact}}</span>
+                </dd>
+                <dt><span>Method</span></dt>
+                <dd>
+                    <span>{{hCBTModel.method}}</span>
+                </dd>
+                <dt><span>Ot Rate</span></dt>
+                <dd>
+                    <span>{{hCBTModel.otRate}}</span>
+                </dd>
+                <dt><span>App Ot Hrs M 1</span></dt>
+                <dd>
+                    <span>{{hCBTModel.appOtHrsM1}}</span>
+                </dd>
+                <dt><span>App Ot Hrs M 2</span></dt>
+                <dd>
+                    <span>{{hCBTModel.appOtHrsM2}}</span>
+                </dd>
+                <dt><span>App Ot Hrs M 3</span></dt>
+                <dd>
+                    <span>{{hCBTModel.appOtHrsM3}}</span>
+                </dd>
+                <dt><span>Ot Spend M 1</span></dt>
+                <dd>
+                    <span>{{hCBTModel.otSpendM1}}</span>
+                </dd>
+                <dt><span>Ot Spend M 2</span></dt>
+                <dd>
+                    <span>{{hCBTModel.otSpendM2}}</span>
+                </dd>
+                <dt><span>Ot Spend M 3</span></dt>
+                <dd>
+                    <span>{{hCBTModel.otSpendM3}}</span>
+                </dd>
+                <dt><span>Notes</span></dt>
+                <dd>
+                    <span>{{hCBTModel.notes}}</span>
+                </dd>
+                <dt><span>Chrgble Staff Hrs WDNM Cases</span></dt>
+                <dd>
+                    <span>{{hCBTModel.chrgbleStaffHrsWDNMCases}}</span>
+                </dd>
+                <dt><span>Projected Billable Hrs M 1</span></dt>
+                <dd>
+                    <span>{{hCBTModel.projectedBillableHrsM1}}</span>
+                </dd>
+                <dt><span>Projected Billable Hrs M 2</span></dt>
+                <dd>
+                    <span>{{hCBTModel.projectedBillableHrsM2}}</span>
+                </dd>
+                <dt><span>Projected Billable Hrs M 3</span></dt>
+                <dd>
+                    <span>{{hCBTModel.projectedBillableHrsM3}}</span>
+                </dd>
+                <dt><span>Cca Vendor Data Sk</span></dt>
+                <dd>
+                    <span>{{hCBTModel.ccaVendorDataSk}}</span>
+                </dd>
+                <dt><span>Payroll Hourly Rate Dollar</span></dt>
+                <dd>
+                    <span>{{hCBTModel.payrollHourlyRateDollar}}</span>
+                </dd>
+                <dt><span>Inf Actual Billable Hours M 1</span></dt>
+                <dd>
+                    <span>{{hCBTModel.infActualBillableHoursM1}}</span>
+                </dd>
+                <dt><span>Inf Actual Billable Hours M 2</span></dt>
+                <dd>
+                    <span>{{hCBTModel.infActualBillableHoursM2}}</span>
+                </dd>
+                <dt><span>Inf Actual Billable Hours M 3</span></dt>
+                <dd>
+                    <span>{{hCBTModel.infActualBillableHoursM3}}</span>
+                </dd>
+                <dt><span>Inf Actual Spend M 1 Non Usd</span></dt>
+                <dd>
+                    <span>{{hCBTModel.infActualSpendM1NonUsd}}</span>
+                </dd>
+                <dt><span>Inf Actual Spend M 2 Non Usd</span></dt>
+                <dd>
+                    <span>{{hCBTModel.infActualSpendM2NonUsd}}</span>
+                </dd>
+                <dt><span>Inf Actual Spend M 3 Non Usd</span></dt>
+                <dd>
+                    <span>{{hCBTModel.infActualSpendM3NonUsd}}</span>
+                </dd>
+                <dt><span>Inf Base Aht</span></dt>
+                <dd>
+                    <span>{{hCBTModel.infBaseAht}}</span>
+                </dd>
+                <dt><span>Inf Base Heads</span></dt>
+                <dd>
+                    <span>{{hCBTModel.infBaseHeads}}</span>
+                </dd>
+                <dt><span>Cnx Base Rate</span></dt>
+                <dd>
+                    <span>{{hCBTModel.cnxBaseRate}}</span>
+                </dd>
+                <dt><span>Inf Currency</span></dt>
+                <dd>
+                    <span>{{hCBTModel.infCurrency}}</span>
+                </dd>
+                <dt><span>Inf Currency Hourly Rate</span></dt>
+                <dd>
+                    <span>{{hCBTModel.infCurrencyHourlyRate}}</span>
+                </dd>
+                <dt><span>Fiscal Quater Name</span></dt>
+                <dd>
+                    <span>{{hCBTModel.fiscalQuaterName}}</span>
+                </dd>
+                <dt><span>Actual Milestone M 1 Diff Per</span></dt>
+                <dd>
+                    <span>{{hCBTModel.actualMilestoneM1DiffPer}}</span>
+                </dd>
+                <dt><span>Actual Milestone M 2 Diff Per</span></dt>
+                <dd>
+                    <span>{{hCBTModel.actualMilestoneM2DiffPer}}</span>
+                </dd>
+                <dt><span>Qtrly Diff Actual Projection</span></dt>
+                <dd>
+                    <span>{{hCBTModel.qtrlyDiffActualProjection}}</span>
+                </dd>
+                <dt><span>Inf Total Qtrly Spend Non Usd</span></dt>
+                <dd>
+                    <span>{{hCBTModel.infTotalQtrlySpendNonUsd}}</span>
+                </dd>
+                <dt><span>Data Flag</span></dt>
+                <dd>
+                    <span>{{hCBTModel.dataFlag}}</span>
+                </dd>
+                <dt><span>Load Date</span></dt>
+                <dd>
+                    <span>{{hCBTModel.loadDate}}</span>
+                </dd>
+                <dt><span>Cnx Base Rate Fte</span></dt>
+                <dd>
+                    <span>{{hCBTModel.cnxBaseRateFte}}</span>
+                </dd>
+                <dt><span>Cnxbaseratetbp</span></dt>
+                <dd>
+                    <span>{{hCBTModel.cnxbaseratetbp}}</span>
+                </dd>
+            </dl>
+
+            <button type="submit"
+                    (click)="previousState()"
+                    class="btn btn-info">
+                <fa-icon [icon]="'arrow-left'"></fa-icon>&nbsp;<span> Back</span>
+            </button>
+
+            <button type="button"
+                    [routerLink]="['/hcbt-model', hCBTModel.id, 'edit']"
+                    class="btn btn-primary">
+                <fa-icon [icon]="'pencil-alt'"></fa-icon>&nbsp;<span> Edit</span>
+            </button>
+        </div>
+    </div>
+</div>

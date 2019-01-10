@@ -1,0 +1,254 @@
+<div>
+    <h2 id="page-heading">
+        <span>HCBT Models</span>
+        <button id="jh-create-entity" class="btn btn-primary float-right jh-create-entity create-hcbt-model" [routerLink]="['/hcbt-model/new']">
+            <fa-icon [icon]="'plus'"></fa-icon>
+            <span >
+            Create new HCBT Model
+            </span>
+        </button>
+    </h2>
+    <jhi-alert></jhi-alert>
+    <br/>
+    <div class="table-responsive" *ngIf="hCBTModels">
+        <table class="table table-striped">
+            <thead>
+            <tr>
+            <th><span>ID</span></th>
+            <th><span>Projected Oth Vol M 1 Tbp</span></th>
+            <th><span>Projected Oth Vol M 2 Tbp</span></th>
+            <th><span>Projected Oth Vol M 3 Tbp</span></th>
+            <th><span>Projected Vol M 1 Tbp</span></th>
+            <th><span>Projected Vol M 2 Tbp</span></th>
+            <th><span>Projected Vol M 3 Tbp</span></th>
+            <th><span>Qtrly Diff Actual Projection</span></th>
+            <th><span>Retrospective Adj M 1</span></th>
+            <th><span>Retrospective Adj M 2</span></th>
+            <th><span>Retrospective Adj M 3</span></th>
+            <th><span>Service Category</span></th>
+            <th><span>Service Drill Down</span></th>
+            <th><span>Service Pillar</span></th>
+            <th><span>Sow Name</span></th>
+            <th><span>Sow Number</span></th>
+            <th><span>Total Qtrly Spend Usd</span></th>
+            <th><span>Inf Total Qtrly Spend Non Usd</span></th>
+            <th><span>Vendor Name</span></th>
+            <th><span>Actual Retrospective Cost M 1</span></th>
+            <th><span>Actual Retrospective Cost M 2</span></th>
+            <th><span>Actual Retrospective Cost M 3</span></th>
+            <th><span>Total Qtrly Retrospective Cost</span></th>
+            <th><span>Change Impact</span></th>
+            <th><span>Notes</span></th>
+            <th><span>Data Flag</span></th>
+            <th><span>Load Date</span></th>
+            <th><span>Cca Vendor Data Sk</span></th>
+            <th><span>Cca Vendor Data Pk</span></th>
+            <th><span>Hourly Rate Dollar Fte</span></th>
+            <th><span>Hourly Rate Dollar Ph</span></th>
+            <th><span>Dollar Rate Per Minute Tbp</span></th>
+            <th><span>Delivery Poc</span></th>
+            <th><span>Actual Billable Heads M 1 Fte</span></th>
+            <th><span>Actual Billable Heads M 2 Fte</span></th>
+            <th><span>Actual Billable Heads M 3 Fte</span></th>
+            <th><span>Act Billable Hours M 1 Ph</span></th>
+            <th><span>Inf Act Bill Hours M 1 Fte</span></th>
+            <th><span>Act Billable Hours M 2 Ph</span></th>
+            <th><span>Inf Act Bill Hours M 2 Fte</span></th>
+            <th><span>Act Billable Hours M 3 Ph</span></th>
+            <th><span>Inf Act Bill Hours M 3 Fte</span></th>
+            <th><span>Actual Other Volume M 1 Tbp</span></th>
+            <th><span>Actual Other Volume M 2 Tbp</span></th>
+            <th><span>Actual Other Volume M 3 Tbp</span></th>
+            <th><span>Actual Spend M 1 Usd</span></th>
+            <th><span>Inf Act Spend M 1 Non Usd Curr</span></th>
+            <th><span>Actual Spend M 2 Usd</span></th>
+            <th><span>Inf Act Spend M 2 Non Usd Curr</span></th>
+            <th><span>Actual Spend M 3 Usd</span></th>
+            <th><span>Inf Act Spend M 3 Non Usd Curr</span></th>
+            <th><span>Actual Volume M 1 Tbp</span></th>
+            <th><span>Actual Volume M 2 Tbp</span></th>
+            <th><span>Actual Volume M 3 Tbp</span></th>
+            <th><span>Actual Po Value Diff Per</span></th>
+            <th><span>Aht In Minutes Tbp</span></th>
+            <th><span>App Ot Hrs M 1</span></th>
+            <th><span>App Ot Hrs M 2</span></th>
+            <th><span>App Ot Hrs M 3</span></th>
+            <th><span>Inf Base Aht</span></th>
+            <th><span>Inf Base Heads</span></th>
+            <th><span>Cnx Base Rate Tbp</span></th>
+            <th><span>Cnx Base Rate Fte</span></th>
+            <th><span>Billing Adj Hitting M 1</span></th>
+            <th><span>Billing Adj Hitting M 2</span></th>
+            <th><span>Billing Adj Hitting M 3</span></th>
+            <th><span>Buffer Usd</span></th>
+            <th><span>Inf Buffer Non Usd Curr</span></th>
+            <th><span>Cisco Business Owner</span></th>
+            <th><span>Inf Currency</span></th>
+            <th><span>Inf Currency Hrly Rate Fte</span></th>
+            <th><span>Actual Proj M 1 Diff Usd</span></th>
+            <th><span>Actual Proj M 2 Diff Usd</span></th>
+            <th><span>Actual Proj M 3 Diff Usd</span></th>
+            <th><span>Fiscal Quarter Name</span></th>
+            <th><span>Vendor Location</span></th>
+            <th><span>Method</span></th>
+            <th><span>Actual Milestone M 1 Per</span></th>
+            <th><span>Actual Milestone M 2 Per</span></th>
+            <th><span>Actual Milestone M 3 Per</span></th>
+            <th><span>Milestone Value M 1 Usd</span></th>
+            <th><span>Inf M Ston Val M 1 Non Usd Cur</span></th>
+            <th><span>Milestone Value M 2 Usd</span></th>
+            <th><span>Inf M Ston Val M 2 Non Usd Cur</span></th>
+            <th><span>Milestone Value M 3 Usd</span></th>
+            <th><span>Inf M Ston Val M 3 Non Usd Cur</span></th>
+            <th><span>Cnx Chr Agent Num Wdnm Cases</span></th>
+            <th><span>Cnv Chr Staff Hrs Wdnm Cases</span></th>
+            <th><span>Other Volume Rate Tbp</span></th>
+            <th><span>Ot Rate</span></th>
+            <th><span>Ot Spend M 1</span></th>
+            <th><span>Ot Spend M 2</span></th>
+            <th><span>Ot Spend M 3</span></th>
+            <th><span>Po Amount Usd</span></th>
+            <th><span>Inf Po Amount Non Usd</span></th>
+            <th><span>Po Number</span></th>
+            <th><span>Proj Billable Heads M 1 Fte</span></th>
+            <th><span>Proj Billable Heads M 2 Fte</span></th>
+            <th><span>Proj Billable Heads M 3 Fte</span></th>
+            <th><span>Projected Billable Hrs M 1 Ph</span></th>
+            <th><span>Projected Billable Hrs M 2 Ph</span></th>
+            <th><span>Projected Billable Hrs M 3 Ph</span></th>
+            <th></th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr *ngFor="let hCBTModel of hCBTModels ;trackBy: trackId">
+                <td><a [routerLink]="['/hcbt-model', hCBTModel.id, 'view' ]">{{hCBTModel.id}}</a></td>
+                <td>{{hCBTModel.projectedOthVolM1Tbp}}</td>
+                <td>{{hCBTModel.projectedOthVolM2Tbp}}</td>
+                <td>{{hCBTModel.projectedOthVolM3Tbp}}</td>
+                <td>{{hCBTModel.projectedVolM1Tbp}}</td>
+                <td>{{hCBTModel.projectedVolM2Tbp}}</td>
+                <td>{{hCBTModel.projectedVolM3Tbp}}</td>
+                <td>{{hCBTModel.qtrlyDiffActualProjection}}</td>
+                <td>{{hCBTModel.retrospectiveAdjM1}}</td>
+                <td>{{hCBTModel.retrospectiveAdjM2}}</td>
+                <td>{{hCBTModel.retrospectiveAdjM3}}</td>
+                <td>{{hCBTModel.serviceCategory}}</td>
+                <td>{{hCBTModel.serviceDrillDown}}</td>
+                <td>{{hCBTModel.servicePillar}}</td>
+                <td>{{hCBTModel.sowName}}</td>
+                <td>{{hCBTModel.sowNumber}}</td>
+                <td>{{hCBTModel.totalQtrlySpendUsd}}</td>
+                <td>{{hCBTModel.infTotalQtrlySpendNonUsd}}</td>
+                <td>{{hCBTModel.vendorName}}</td>
+                <td>{{hCBTModel.actualRetrospectiveCostM1}}</td>
+                <td>{{hCBTModel.actualRetrospectiveCostM2}}</td>
+                <td>{{hCBTModel.actualRetrospectiveCostM3}}</td>
+                <td>{{hCBTModel.totalQtrlyRetrospectiveCost}}</td>
+                <td>{{hCBTModel.changeImpact}}</td>
+                <td>{{hCBTModel.notes}}</td>
+                <td>{{hCBTModel.dataFlag}}</td>
+                <td>{{hCBTModel.loadDate | date:'mediumDate'}}</td>
+                <td>{{hCBTModel.ccaVendorDataSk}}</td>
+                <td>{{hCBTModel.ccaVendorDataPk}}</td>
+                <td>{{hCBTModel.hourlyRateDollarFte}}</td>
+                <td>{{hCBTModel.hourlyRateDollarPh}}</td>
+                <td>{{hCBTModel.dollarRatePerMinuteTbp}}</td>
+                <td>{{hCBTModel.deliveryPoc}}</td>
+                <td>{{hCBTModel.actualBillableHeadsM1Fte}}</td>
+                <td>{{hCBTModel.actualBillableHeadsM2Fte}}</td>
+                <td>{{hCBTModel.actualBillableHeadsM3Fte}}</td>
+                <td>{{hCBTModel.actBillableHoursM1Ph}}</td>
+                <td>{{hCBTModel.infActBillHoursM1Fte}}</td>
+                <td>{{hCBTModel.actBillableHoursM2Ph}}</td>
+                <td>{{hCBTModel.infActBillHoursM2Fte}}</td>
+                <td>{{hCBTModel.actBillableHoursM3Ph}}</td>
+                <td>{{hCBTModel.infActBillHoursM3Fte}}</td>
+                <td>{{hCBTModel.actualOtherVolumeM1Tbp}}</td>
+                <td>{{hCBTModel.actualOtherVolumeM2Tbp}}</td>
+                <td>{{hCBTModel.actualOtherVolumeM3Tbp}}</td>
+                <td>{{hCBTModel.actualSpendM1Usd}}</td>
+                <td>{{hCBTModel.infActSpendM1NonUsdCurr}}</td>
+                <td>{{hCBTModel.actualSpendM2Usd}}</td>
+                <td>{{hCBTModel.infActSpendM2NonUsdCurr}}</td>
+                <td>{{hCBTModel.actualSpendM3Usd}}</td>
+                <td>{{hCBTModel.infActSpendM3NonUsdCurr}}</td>
+                <td>{{hCBTModel.actualVolumeM1Tbp}}</td>
+                <td>{{hCBTModel.actualVolumeM2Tbp}}</td>
+                <td>{{hCBTModel.actualVolumeM3Tbp}}</td>
+                <td>{{hCBTModel.actualPoValueDiffPer}}</td>
+                <td>{{hCBTModel.ahtInMinutesTbp}}</td>
+                <td>{{hCBTModel.appOtHrsM1}}</td>
+                <td>{{hCBTModel.appOtHrsM2}}</td>
+                <td>{{hCBTModel.appOtHrsM3}}</td>
+                <td>{{hCBTModel.infBaseAht}}</td>
+                <td>{{hCBTModel.infBaseHeads}}</td>
+                <td>{{hCBTModel.cnxBaseRateTbp}}</td>
+                <td>{{hCBTModel.cnxBaseRateFte}}</td>
+                <td>{{hCBTModel.billingAdjHittingM1}}</td>
+                <td>{{hCBTModel.billingAdjHittingM2}}</td>
+                <td>{{hCBTModel.billingAdjHittingM3}}</td>
+                <td>{{hCBTModel.bufferUsd}}</td>
+                <td>{{hCBTModel.infBufferNonUsdCurr}}</td>
+                <td>{{hCBTModel.ciscoBusinessOwner}}</td>
+                <td>{{hCBTModel.infCurrency}}</td>
+                <td>{{hCBTModel.infCurrencyHrlyRateFte}}</td>
+                <td>{{hCBTModel.actualProjM1DiffUsd}}</td>
+                <td>{{hCBTModel.actualProjM2DiffUsd}}</td>
+                <td>{{hCBTModel.actualProjM3DiffUsd}}</td>
+                <td>{{hCBTModel.fiscalQuarterName}}</td>
+                <td>{{hCBTModel.vendorLocation}}</td>
+                <td>{{hCBTModel.method}}</td>
+                <td>{{hCBTModel.actualMilestoneM1Per}}</td>
+                <td>{{hCBTModel.actualMilestoneM2Per}}</td>
+                <td>{{hCBTModel.actualMilestoneM3Per}}</td>
+                <td>{{hCBTModel.milestoneValueM1Usd}}</td>
+                <td>{{hCBTModel.infMStonValM1NonUsdCur}}</td>
+                <td>{{hCBTModel.milestoneValueM2Usd}}</td>
+                <td>{{hCBTModel.infMStonValM2NonUsdCur}}</td>
+                <td>{{hCBTModel.milestoneValueM3Usd}}</td>
+                <td>{{hCBTModel.infMStonValM3NonUsdCur}}</td>
+                <td>{{hCBTModel.cnxChrAgentNumWdnmCases}}</td>
+                <td>{{hCBTModel.cnvChrStaffHrsWdnmCases}}</td>
+                <td>{{hCBTModel.otherVolumeRateTbp}}</td>
+                <td>{{hCBTModel.otRate}}</td>
+                <td>{{hCBTModel.otSpendM1}}</td>
+                <td>{{hCBTModel.otSpendM2}}</td>
+                <td>{{hCBTModel.otSpendM3}}</td>
+                <td>{{hCBTModel.poAmountUsd}}</td>
+                <td>{{hCBTModel.infPoAmountNonUsd}}</td>
+                <td>{{hCBTModel.poNumber}}</td>
+                <td>{{hCBTModel.projBillableHeadsM1Fte}}</td>
+                <td>{{hCBTModel.projBillableHeadsM2Fte}}</td>
+                <td>{{hCBTModel.projBillableHeadsM3Fte}}</td>
+                <td>{{hCBTModel.projectedBillableHrsM1Ph}}</td>
+                <td>{{hCBTModel.projectedBillableHrsM2Ph}}</td>
+                <td>{{hCBTModel.projectedBillableHrsM3Ph}}</td>
+                <td class="text-right">
+                    <div class="btn-group flex-btn-group-container">
+                        <button type="submit"
+                                [routerLink]="['/hcbt-model', hCBTModel.id, 'view' ]"
+                                class="btn btn-info btn-sm">
+                            <fa-icon [icon]="'eye'"></fa-icon>
+                            <span class="d-none d-md-inline">View</span>
+                        </button>
+                        <button type="submit"
+                                [routerLink]="['/hcbt-model', hCBTModel.id, 'edit']"
+                                class="btn btn-primary btn-sm">
+                            <fa-icon [icon]="'pencil-alt'"></fa-icon>
+                            <span class="d-none d-md-inline">Edit</span>
+                        </button>
+                        <button type="submit"
+                                [routerLink]="['/', { outlets: { popup: 'hcbt-model/'+ hCBTModel.id + '/delete'} }]"
+                                replaceUrl="true"
+                                queryParamsHandling="merge"
+                                class="btn btn-danger btn-sm">
+                            <fa-icon [icon]="'times'"></fa-icon>
+                            <span class="d-none d-md-inline">Delete</span>
+                        </button>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,534 @@
+<div class="row justify-content-center">
+    <div class="col-8">
+        <form name="editForm" role="form" novalidate (ngSubmit)="save()" #editForm="ngForm">
+            <h2 id="jhi-hcbt-model-heading">Create or edit a HCBT Model</h2>
+            <div>
+                <jhi-alert-error></jhi-alert-error>
+                <div class="form-group" [hidden]="!hCBTModel.id">
+                    <label for="id">ID</label>
+                    <input type="text" class="form-control" id="id" name="id"
+                        [(ngModel)]="hCBTModel.id" readonly />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_projectedOthVolM1Tbp">Projected Oth Vol M 1 Tbp</label>
+                    <input type="number" class="form-control" name="projectedOthVolM1Tbp" id="field_projectedOthVolM1Tbp"
+                        [(ngModel)]="hCBTModel.projectedOthVolM1Tbp" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_projectedOthVolM2Tbp">Projected Oth Vol M 2 Tbp</label>
+                    <input type="number" class="form-control" name="projectedOthVolM2Tbp" id="field_projectedOthVolM2Tbp"
+                        [(ngModel)]="hCBTModel.projectedOthVolM2Tbp" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_projectedOthVolM3Tbp">Projected Oth Vol M 3 Tbp</label>
+                    <input type="number" class="form-control" name="projectedOthVolM3Tbp" id="field_projectedOthVolM3Tbp"
+                        [(ngModel)]="hCBTModel.projectedOthVolM3Tbp" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_projectedVolM1Tbp">Projected Vol M 1 Tbp</label>
+                    <input type="number" class="form-control" name="projectedVolM1Tbp" id="field_projectedVolM1Tbp"
+                        [(ngModel)]="hCBTModel.projectedVolM1Tbp" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_projectedVolM2Tbp">Projected Vol M 2 Tbp</label>
+                    <input type="number" class="form-control" name="projectedVolM2Tbp" id="field_projectedVolM2Tbp"
+                        [(ngModel)]="hCBTModel.projectedVolM2Tbp" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_projectedVolM3Tbp">Projected Vol M 3 Tbp</label>
+                    <input type="number" class="form-control" name="projectedVolM3Tbp" id="field_projectedVolM3Tbp"
+                        [(ngModel)]="hCBTModel.projectedVolM3Tbp" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_qtrlyDiffActualProjection">Qtrly Diff Actual Projection</label>
+                    <input type="number" class="form-control" name="qtrlyDiffActualProjection" id="field_qtrlyDiffActualProjection"
+                        [(ngModel)]="hCBTModel.qtrlyDiffActualProjection" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_retrospectiveAdjM1">Retrospective Adj M 1</label>
+                    <input type="number" class="form-control" name="retrospectiveAdjM1" id="field_retrospectiveAdjM1"
+                        [(ngModel)]="hCBTModel.retrospectiveAdjM1" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_retrospectiveAdjM2">Retrospective Adj M 2</label>
+                    <input type="number" class="form-control" name="retrospectiveAdjM2" id="field_retrospectiveAdjM2"
+                        [(ngModel)]="hCBTModel.retrospectiveAdjM2" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_retrospectiveAdjM3">Retrospective Adj M 3</label>
+                    <input type="number" class="form-control" name="retrospectiveAdjM3" id="field_retrospectiveAdjM3"
+                        [(ngModel)]="hCBTModel.retrospectiveAdjM3" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_serviceCategory">Service Category</label>
+                    <input type="text" class="form-control" name="serviceCategory" id="field_serviceCategory"
+                        [(ngModel)]="hCBTModel.serviceCategory" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_serviceDrillDown">Service Drill Down</label>
+                    <input type="text" class="form-control" name="serviceDrillDown" id="field_serviceDrillDown"
+                        [(ngModel)]="hCBTModel.serviceDrillDown" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_servicePillar">Service Pillar</label>
+                    <input type="text" class="form-control" name="servicePillar" id="field_servicePillar"
+                        [(ngModel)]="hCBTModel.servicePillar" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_sowName">Sow Name</label>
+                    <input type="text" class="form-control" name="sowName" id="field_sowName"
+                        [(ngModel)]="hCBTModel.sowName" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_sowNumber">Sow Number</label>
+                    <input type="text" class="form-control" name="sowNumber" id="field_sowNumber"
+                        [(ngModel)]="hCBTModel.sowNumber" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_totalQtrlySpendUsd">Total Qtrly Spend Usd</label>
+                    <input type="number" class="form-control" name="totalQtrlySpendUsd" id="field_totalQtrlySpendUsd"
+                        [(ngModel)]="hCBTModel.totalQtrlySpendUsd" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_infTotalQtrlySpendNonUsd">Inf Total Qtrly Spend Non Usd</label>
+                    <input type="number" class="form-control" name="infTotalQtrlySpendNonUsd" id="field_infTotalQtrlySpendNonUsd"
+                        [(ngModel)]="hCBTModel.infTotalQtrlySpendNonUsd" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_vendorName">Vendor Name</label>
+                    <input type="text" class="form-control" name="vendorName" id="field_vendorName"
+                        [(ngModel)]="hCBTModel.vendorName" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_actualRetrospectiveCostM1">Actual Retrospective Cost M 1</label>
+                    <input type="number" class="form-control" name="actualRetrospectiveCostM1" id="field_actualRetrospectiveCostM1"
+                        [(ngModel)]="hCBTModel.actualRetrospectiveCostM1" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_actualRetrospectiveCostM2">Actual Retrospective Cost M 2</label>
+                    <input type="number" class="form-control" name="actualRetrospectiveCostM2" id="field_actualRetrospectiveCostM2"
+                        [(ngModel)]="hCBTModel.actualRetrospectiveCostM2" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_actualRetrospectiveCostM3">Actual Retrospective Cost M 3</label>
+                    <input type="number" class="form-control" name="actualRetrospectiveCostM3" id="field_actualRetrospectiveCostM3"
+                        [(ngModel)]="hCBTModel.actualRetrospectiveCostM3" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_totalQtrlyRetrospectiveCost">Total Qtrly Retrospective Cost</label>
+                    <input type="number" class="form-control" name="totalQtrlyRetrospectiveCost" id="field_totalQtrlyRetrospectiveCost"
+                        [(ngModel)]="hCBTModel.totalQtrlyRetrospectiveCost" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_changeImpact">Change Impact</label>
+                    <input type="text" class="form-control" name="changeImpact" id="field_changeImpact"
+                        [(ngModel)]="hCBTModel.changeImpact" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_notes">Notes</label>
+                    <input type="text" class="form-control" name="notes" id="field_notes"
+                        [(ngModel)]="hCBTModel.notes" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_dataFlag">Data Flag</label>
+                    <input type="text" class="form-control" name="dataFlag" id="field_dataFlag"
+                        [(ngModel)]="hCBTModel.dataFlag" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_loadDate">Load Date</label>
+                    <div class="input-group">
+                        <input id="field_loadDate" type="text" class="form-control" name="loadDate" ngbDatepicker  #loadDateDp="ngbDatepicker" [(ngModel)]="hCBTModel.loadDate"
+                        />
+                        <span class="input-group-append">
+                            <button type="button" class="btn btn-secondary" (click)="loadDateDp.toggle()"><fa-icon [icon]="'calendar-alt'"></fa-icon></button>
+                        </span>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_ccaVendorDataSk">Cca Vendor Data Sk</label>
+                    <input type="number" class="form-control" name="ccaVendorDataSk" id="field_ccaVendorDataSk"
+                        [(ngModel)]="hCBTModel.ccaVendorDataSk" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_ccaVendorDataPk">Cca Vendor Data Pk</label>
+                    <input type="text" class="form-control" name="ccaVendorDataPk" id="field_ccaVendorDataPk"
+                        [(ngModel)]="hCBTModel.ccaVendorDataPk" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_hourlyRateDollarFte">Hourly Rate Dollar Fte</label>
+                    <input type="number" class="form-control" name="hourlyRateDollarFte" id="field_hourlyRateDollarFte"
+                        [(ngModel)]="hCBTModel.hourlyRateDollarFte" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_hourlyRateDollarPh">Hourly Rate Dollar Ph</label>
+                    <input type="number" class="form-control" name="hourlyRateDollarPh" id="field_hourlyRateDollarPh"
+                        [(ngModel)]="hCBTModel.hourlyRateDollarPh" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_dollarRatePerMinuteTbp">Dollar Rate Per Minute Tbp</label>
+                    <input type="number" class="form-control" name="dollarRatePerMinuteTbp" id="field_dollarRatePerMinuteTbp"
+                        [(ngModel)]="hCBTModel.dollarRatePerMinuteTbp" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_deliveryPoc">Delivery Poc</label>
+                    <input type="text" class="form-control" name="deliveryPoc" id="field_deliveryPoc"
+                        [(ngModel)]="hCBTModel.deliveryPoc" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_actualBillableHeadsM1Fte">Actual Billable Heads M 1 Fte</label>
+                    <input type="number" class="form-control" name="actualBillableHeadsM1Fte" id="field_actualBillableHeadsM1Fte"
+                        [(ngModel)]="hCBTModel.actualBillableHeadsM1Fte" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_actualBillableHeadsM2Fte">Actual Billable Heads M 2 Fte</label>
+                    <input type="number" class="form-control" name="actualBillableHeadsM2Fte" id="field_actualBillableHeadsM2Fte"
+                        [(ngModel)]="hCBTModel.actualBillableHeadsM2Fte" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_actualBillableHeadsM3Fte">Actual Billable Heads M 3 Fte</label>
+                    <input type="number" class="form-control" name="actualBillableHeadsM3Fte" id="field_actualBillableHeadsM3Fte"
+                        [(ngModel)]="hCBTModel.actualBillableHeadsM3Fte" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_actBillableHoursM1Ph">Act Billable Hours M 1 Ph</label>
+                    <input type="number" class="form-control" name="actBillableHoursM1Ph" id="field_actBillableHoursM1Ph"
+                        [(ngModel)]="hCBTModel.actBillableHoursM1Ph" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_infActBillHoursM1Fte">Inf Act Bill Hours M 1 Fte</label>
+                    <input type="number" class="form-control" name="infActBillHoursM1Fte" id="field_infActBillHoursM1Fte"
+                        [(ngModel)]="hCBTModel.infActBillHoursM1Fte" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_actBillableHoursM2Ph">Act Billable Hours M 2 Ph</label>
+                    <input type="number" class="form-control" name="actBillableHoursM2Ph" id="field_actBillableHoursM2Ph"
+                        [(ngModel)]="hCBTModel.actBillableHoursM2Ph" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_infActBillHoursM2Fte">Inf Act Bill Hours M 2 Fte</label>
+                    <input type="number" class="form-control" name="infActBillHoursM2Fte" id="field_infActBillHoursM2Fte"
+                        [(ngModel)]="hCBTModel.infActBillHoursM2Fte" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_actBillableHoursM3Ph">Act Billable Hours M 3 Ph</label>
+                    <input type="number" class="form-control" name="actBillableHoursM3Ph" id="field_actBillableHoursM3Ph"
+                        [(ngModel)]="hCBTModel.actBillableHoursM3Ph" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_infActBillHoursM3Fte">Inf Act Bill Hours M 3 Fte</label>
+                    <input type="number" class="form-control" name="infActBillHoursM3Fte" id="field_infActBillHoursM3Fte"
+                        [(ngModel)]="hCBTModel.infActBillHoursM3Fte" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_actualOtherVolumeM1Tbp">Actual Other Volume M 1 Tbp</label>
+                    <input type="number" class="form-control" name="actualOtherVolumeM1Tbp" id="field_actualOtherVolumeM1Tbp"
+                        [(ngModel)]="hCBTModel.actualOtherVolumeM1Tbp" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_actualOtherVolumeM2Tbp">Actual Other Volume M 2 Tbp</label>
+                    <input type="number" class="form-control" name="actualOtherVolumeM2Tbp" id="field_actualOtherVolumeM2Tbp"
+                        [(ngModel)]="hCBTModel.actualOtherVolumeM2Tbp" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_actualOtherVolumeM3Tbp">Actual Other Volume M 3 Tbp</label>
+                    <input type="number" class="form-control" name="actualOtherVolumeM3Tbp" id="field_actualOtherVolumeM3Tbp"
+                        [(ngModel)]="hCBTModel.actualOtherVolumeM3Tbp" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_actualSpendM1Usd">Actual Spend M 1 Usd</label>
+                    <input type="number" class="form-control" name="actualSpendM1Usd" id="field_actualSpendM1Usd"
+                        [(ngModel)]="hCBTModel.actualSpendM1Usd" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_infActSpendM1NonUsdCurr">Inf Act Spend M 1 Non Usd Curr</label>
+                    <input type="number" class="form-control" name="infActSpendM1NonUsdCurr" id="field_infActSpendM1NonUsdCurr"
+                        [(ngModel)]="hCBTModel.infActSpendM1NonUsdCurr" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_actualSpendM2Usd">Actual Spend M 2 Usd</label>
+                    <input type="number" class="form-control" name="actualSpendM2Usd" id="field_actualSpendM2Usd"
+                        [(ngModel)]="hCBTModel.actualSpendM2Usd" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_infActSpendM2NonUsdCurr">Inf Act Spend M 2 Non Usd Curr</label>
+                    <input type="number" class="form-control" name="infActSpendM2NonUsdCurr" id="field_infActSpendM2NonUsdCurr"
+                        [(ngModel)]="hCBTModel.infActSpendM2NonUsdCurr" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_actualSpendM3Usd">Actual Spend M 3 Usd</label>
+                    <input type="number" class="form-control" name="actualSpendM3Usd" id="field_actualSpendM3Usd"
+                        [(ngModel)]="hCBTModel.actualSpendM3Usd" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_infActSpendM3NonUsdCurr">Inf Act Spend M 3 Non Usd Curr</label>
+                    <input type="number" class="form-control" name="infActSpendM3NonUsdCurr" id="field_infActSpendM3NonUsdCurr"
+                        [(ngModel)]="hCBTModel.infActSpendM3NonUsdCurr" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_actualVolumeM1Tbp">Actual Volume M 1 Tbp</label>
+                    <input type="number" class="form-control" name="actualVolumeM1Tbp" id="field_actualVolumeM1Tbp"
+                        [(ngModel)]="hCBTModel.actualVolumeM1Tbp" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_actualVolumeM2Tbp">Actual Volume M 2 Tbp</label>
+                    <input type="number" class="form-control" name="actualVolumeM2Tbp" id="field_actualVolumeM2Tbp"
+                        [(ngModel)]="hCBTModel.actualVolumeM2Tbp" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_actualVolumeM3Tbp">Actual Volume M 3 Tbp</label>
+                    <input type="number" class="form-control" name="actualVolumeM3Tbp" id="field_actualVolumeM3Tbp"
+                        [(ngModel)]="hCBTModel.actualVolumeM3Tbp" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_actualPoValueDiffPer">Actual Po Value Diff Per</label>
+                    <input type="number" class="form-control" name="actualPoValueDiffPer" id="field_actualPoValueDiffPer"
+                        [(ngModel)]="hCBTModel.actualPoValueDiffPer" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_ahtInMinutesTbp">Aht In Minutes Tbp</label>
+                    <input type="number" class="form-control" name="ahtInMinutesTbp" id="field_ahtInMinutesTbp"
+                        [(ngModel)]="hCBTModel.ahtInMinutesTbp" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_appOtHrsM1">App Ot Hrs M 1</label>
+                    <input type="number" class="form-control" name="appOtHrsM1" id="field_appOtHrsM1"
+                        [(ngModel)]="hCBTModel.appOtHrsM1" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_appOtHrsM2">App Ot Hrs M 2</label>
+                    <input type="number" class="form-control" name="appOtHrsM2" id="field_appOtHrsM2"
+                        [(ngModel)]="hCBTModel.appOtHrsM2" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_appOtHrsM3">App Ot Hrs M 3</label>
+                    <input type="number" class="form-control" name="appOtHrsM3" id="field_appOtHrsM3"
+                        [(ngModel)]="hCBTModel.appOtHrsM3" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_infBaseAht">Inf Base Aht</label>
+                    <input type="number" class="form-control" name="infBaseAht" id="field_infBaseAht"
+                        [(ngModel)]="hCBTModel.infBaseAht" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_infBaseHeads">Inf Base Heads</label>
+                    <input type="text" class="form-control" name="infBaseHeads" id="field_infBaseHeads"
+                        [(ngModel)]="hCBTModel.infBaseHeads" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_cnxBaseRateTbp">Cnx Base Rate Tbp</label>
+                    <input type="number" class="form-control" name="cnxBaseRateTbp" id="field_cnxBaseRateTbp"
+                        [(ngModel)]="hCBTModel.cnxBaseRateTbp" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_cnxBaseRateFte">Cnx Base Rate Fte</label>
+                    <input type="number" class="form-control" name="cnxBaseRateFte" id="field_cnxBaseRateFte"
+                        [(ngModel)]="hCBTModel.cnxBaseRateFte" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_billingAdjHittingM1">Billing Adj Hitting M 1</label>
+                    <input type="number" class="form-control" name="billingAdjHittingM1" id="field_billingAdjHittingM1"
+                        [(ngModel)]="hCBTModel.billingAdjHittingM1" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_billingAdjHittingM2">Billing Adj Hitting M 2</label>
+                    <input type="number" class="form-control" name="billingAdjHittingM2" id="field_billingAdjHittingM2"
+                        [(ngModel)]="hCBTModel.billingAdjHittingM2" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_billingAdjHittingM3">Billing Adj Hitting M 3</label>
+                    <input type="number" class="form-control" name="billingAdjHittingM3" id="field_billingAdjHittingM3"
+                        [(ngModel)]="hCBTModel.billingAdjHittingM3" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_bufferUsd">Buffer Usd</label>
+                    <input type="number" class="form-control" name="bufferUsd" id="field_bufferUsd"
+                        [(ngModel)]="hCBTModel.bufferUsd" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_infBufferNonUsdCurr">Inf Buffer Non Usd Curr</label>
+                    <input type="number" class="form-control" name="infBufferNonUsdCurr" id="field_infBufferNonUsdCurr"
+                        [(ngModel)]="hCBTModel.infBufferNonUsdCurr" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_ciscoBusinessOwner">Cisco Business Owner</label>
+                    <input type="text" class="form-control" name="ciscoBusinessOwner" id="field_ciscoBusinessOwner"
+                        [(ngModel)]="hCBTModel.ciscoBusinessOwner" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_infCurrency">Inf Currency</label>
+                    <input type="text" class="form-control" name="infCurrency" id="field_infCurrency"
+                        [(ngModel)]="hCBTModel.infCurrency" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_infCurrencyHrlyRateFte">Inf Currency Hrly Rate Fte</label>
+                    <input type="number" class="form-control" name="infCurrencyHrlyRateFte" id="field_infCurrencyHrlyRateFte"
+                        [(ngModel)]="hCBTModel.infCurrencyHrlyRateFte" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_actualProjM1DiffUsd">Actual Proj M 1 Diff Usd</label>
+                    <input type="number" class="form-control" name="actualProjM1DiffUsd" id="field_actualProjM1DiffUsd"
+                        [(ngModel)]="hCBTModel.actualProjM1DiffUsd" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_actualProjM2DiffUsd">Actual Proj M 2 Diff Usd</label>
+                    <input type="number" class="form-control" name="actualProjM2DiffUsd" id="field_actualProjM2DiffUsd"
+                        [(ngModel)]="hCBTModel.actualProjM2DiffUsd" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_actualProjM3DiffUsd">Actual Proj M 3 Diff Usd</label>
+                    <input type="number" class="form-control" name="actualProjM3DiffUsd" id="field_actualProjM3DiffUsd"
+                        [(ngModel)]="hCBTModel.actualProjM3DiffUsd" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_fiscalQuarterName">Fiscal Quarter Name</label>
+                    <input type="text" class="form-control" name="fiscalQuarterName" id="field_fiscalQuarterName"
+                        [(ngModel)]="hCBTModel.fiscalQuarterName" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_vendorLocation">Vendor Location</label>
+                    <input type="text" class="form-control" name="vendorLocation" id="field_vendorLocation"
+                        [(ngModel)]="hCBTModel.vendorLocation" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_method">Method</label>
+                    <input type="text" class="form-control" name="method" id="field_method"
+                        [(ngModel)]="hCBTModel.method" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_actualMilestoneM1Per">Actual Milestone M 1 Per</label>
+                    <input type="number" class="form-control" name="actualMilestoneM1Per" id="field_actualMilestoneM1Per"
+                        [(ngModel)]="hCBTModel.actualMilestoneM1Per" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_actualMilestoneM2Per">Actual Milestone M 2 Per</label>
+                    <input type="number" class="form-control" name="actualMilestoneM2Per" id="field_actualMilestoneM2Per"
+                        [(ngModel)]="hCBTModel.actualMilestoneM2Per" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_actualMilestoneM3Per">Actual Milestone M 3 Per</label>
+                    <input type="number" class="form-control" name="actualMilestoneM3Per" id="field_actualMilestoneM3Per"
+                        [(ngModel)]="hCBTModel.actualMilestoneM3Per" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_milestoneValueM1Usd">Milestone Value M 1 Usd</label>
+                    <input type="number" class="form-control" name="milestoneValueM1Usd" id="field_milestoneValueM1Usd"
+                        [(ngModel)]="hCBTModel.milestoneValueM1Usd" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_infMStonValM1NonUsdCur">Inf M Ston Val M 1 Non Usd Cur</label>
+                    <input type="number" class="form-control" name="infMStonValM1NonUsdCur" id="field_infMStonValM1NonUsdCur"
+                        [(ngModel)]="hCBTModel.infMStonValM1NonUsdCur" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_milestoneValueM2Usd">Milestone Value M 2 Usd</label>
+                    <input type="number" class="form-control" name="milestoneValueM2Usd" id="field_milestoneValueM2Usd"
+                        [(ngModel)]="hCBTModel.milestoneValueM2Usd" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_infMStonValM2NonUsdCur">Inf M Ston Val M 2 Non Usd Cur</label>
+                    <input type="number" class="form-control" name="infMStonValM2NonUsdCur" id="field_infMStonValM2NonUsdCur"
+                        [(ngModel)]="hCBTModel.infMStonValM2NonUsdCur" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_milestoneValueM3Usd">Milestone Value M 3 Usd</label>
+                    <input type="number" class="form-control" name="milestoneValueM3Usd" id="field_milestoneValueM3Usd"
+                        [(ngModel)]="hCBTModel.milestoneValueM3Usd" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_infMStonValM3NonUsdCur">Inf M Ston Val M 3 Non Usd Cur</label>
+                    <input type="number" class="form-control" name="infMStonValM3NonUsdCur" id="field_infMStonValM3NonUsdCur"
+                        [(ngModel)]="hCBTModel.infMStonValM3NonUsdCur" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_cnxChrAgentNumWdnmCases">Cnx Chr Agent Num Wdnm Cases</label>
+                    <input type="number" class="form-control" name="cnxChrAgentNumWdnmCases" id="field_cnxChrAgentNumWdnmCases"
+                        [(ngModel)]="hCBTModel.cnxChrAgentNumWdnmCases" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_cnvChrStaffHrsWdnmCases">Cnv Chr Staff Hrs Wdnm Cases</label>
+                    <input type="number" class="form-control" name="cnvChrStaffHrsWdnmCases" id="field_cnvChrStaffHrsWdnmCases"
+                        [(ngModel)]="hCBTModel.cnvChrStaffHrsWdnmCases" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_otherVolumeRateTbp">Other Volume Rate Tbp</label>
+                    <input type="number" class="form-control" name="otherVolumeRateTbp" id="field_otherVolumeRateTbp"
+                        [(ngModel)]="hCBTModel.otherVolumeRateTbp" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_otRate">Ot Rate</label>
+                    <input type="number" class="form-control" name="otRate" id="field_otRate"
+                        [(ngModel)]="hCBTModel.otRate" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_otSpendM1">Ot Spend M 1</label>
+                    <input type="number" class="form-control" name="otSpendM1" id="field_otSpendM1"
+                        [(ngModel)]="hCBTModel.otSpendM1" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_otSpendM2">Ot Spend M 2</label>
+                    <input type="number" class="form-control" name="otSpendM2" id="field_otSpendM2"
+                        [(ngModel)]="hCBTModel.otSpendM2" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_otSpendM3">Ot Spend M 3</label>
+                    <input type="number" class="form-control" name="otSpendM3" id="field_otSpendM3"
+                        [(ngModel)]="hCBTModel.otSpendM3" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_poAmountUsd">Po Amount Usd</label>
+                    <input type="number" class="form-control" name="poAmountUsd" id="field_poAmountUsd"
+                        [(ngModel)]="hCBTModel.poAmountUsd" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_infPoAmountNonUsd">Inf Po Amount Non Usd</label>
+                    <input type="number" class="form-control" name="infPoAmountNonUsd" id="field_infPoAmountNonUsd"
+                        [(ngModel)]="hCBTModel.infPoAmountNonUsd" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_poNumber">Po Number</label>
+                    <input type="text" class="form-control" name="poNumber" id="field_poNumber"
+                        [(ngModel)]="hCBTModel.poNumber" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_projBillableHeadsM1Fte">Proj Billable Heads M 1 Fte</label>
+                    <input type="number" class="form-control" name="projBillableHeadsM1Fte" id="field_projBillableHeadsM1Fte"
+                        [(ngModel)]="hCBTModel.projBillableHeadsM1Fte" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_projBillableHeadsM2Fte">Proj Billable Heads M 2 Fte</label>
+                    <input type="number" class="form-control" name="projBillableHeadsM2Fte" id="field_projBillableHeadsM2Fte"
+                        [(ngModel)]="hCBTModel.projBillableHeadsM2Fte" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_projBillableHeadsM3Fte">Proj Billable Heads M 3 Fte</label>
+                    <input type="number" class="form-control" name="projBillableHeadsM3Fte" id="field_projBillableHeadsM3Fte"
+                        [(ngModel)]="hCBTModel.projBillableHeadsM3Fte" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_projectedBillableHrsM1Ph">Projected Billable Hrs M 1 Ph</label>
+                    <input type="number" class="form-control" name="projectedBillableHrsM1Ph" id="field_projectedBillableHrsM1Ph"
+                        [(ngModel)]="hCBTModel.projectedBillableHrsM1Ph" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_projectedBillableHrsM2Ph">Projected Billable Hrs M 2 Ph</label>
+                    <input type="number" class="form-control" name="projectedBillableHrsM2Ph" id="field_projectedBillableHrsM2Ph"
+                        [(ngModel)]="hCBTModel.projectedBillableHrsM2Ph" />
+                </div>
+                <div class="form-group">
+                    <label class="form-control-label" for="field_projectedBillableHrsM3Ph">Projected Billable Hrs M 3 Ph</label>
+                    <input type="number" class="form-control" name="projectedBillableHrsM3Ph" id="field_projectedBillableHrsM3Ph"
+                        [(ngModel)]="hCBTModel.projectedBillableHrsM3Ph" />
+                </div>
+
+            </div>
+            <div>
+                <button type="button" id="cancel-save" class="btn btn-secondary"  (click)="previousState()">
+                    <fa-icon [icon]="'ban'"></fa-icon>&nbsp;<span>Cancel</span>
+                </button>
+                <button type="submit" id="save-entity" [disabled]="editForm.form.invalid || isSaving" class="btn btn-primary">
+                    <fa-icon [icon]="'save'"></fa-icon>&nbsp;<span>Save</span>
+                </button>
+            </div>
+        </form>
+    </div>
+</div>

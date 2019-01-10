@@ -1,0 +1,419 @@
+{
+    "name": "HCBTModel",
+    "fields": [
+        {
+            "fieldName": "projectedOthVolM1Tbp",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "projectedOthVolM2Tbp",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "projectedOthVolM3Tbp",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "projectedVolM1Tbp",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "projectedVolM2Tbp",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "projectedVolM3Tbp",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "qtrlyDiffActualProjection",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "retrospectiveAdjM1",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "retrospectiveAdjM2",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "retrospectiveAdjM3",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "serviceCategory",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "serviceDrillDown",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "servicePillar",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "sowName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "sowNumber",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "totalQtrlySpendUsd",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "infTotalQtrlySpendNonUsd",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "vendorName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "actualRetrospectiveCostM1",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "actualRetrospectiveCostM2",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "actualRetrospectiveCostM3",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "totalQtrlyRetrospectiveCost",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "changeImpact",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "notes",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "dataFlag",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "loadDate",
+            "fieldType": "LocalDate"
+        },
+        {
+            "fieldName": "ccaVendorDataSk",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "ccaVendorDataPk",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "hourlyRateDollarFte",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "hourlyRateDollarPh",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "dollarRatePerMinuteTbp",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "deliveryPoc",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "actualBillableHeadsM1Fte",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "actualBillableHeadsM2Fte",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "actualBillableHeadsM3Fte",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "actBillableHoursM1Ph",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "infActBillHoursM1Fte",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "actBillableHoursM2Ph",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "infActBillHoursM2Fte",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "actBillableHoursM3Ph",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "infActBillHoursM3Fte",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "actualOtherVolumeM1Tbp",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "actualOtherVolumeM2Tbp",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "actualOtherVolumeM3Tbp",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "actualSpendM1Usd",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "infActSpendM1NonUsdCurr",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "actualSpendM2Usd",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "infActSpendM2NonUsdCurr",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "actualSpendM3Usd",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "infActSpendM3NonUsdCurr",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "actualVolumeM1Tbp",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "actualVolumeM2Tbp",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "actualVolumeM3Tbp",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "actualPoValueDiffPer",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "ahtInMinutesTbp",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "appOtHrsM1",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "appOtHrsM2",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "appOtHrsM3",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "infBaseAht",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "infBaseHeads",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "cnxBaseRateTbp",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "cnxBaseRateFte",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "billingAdjHittingM1",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "billingAdjHittingM2",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "billingAdjHittingM3",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "bufferUsd",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "infBufferNonUsdCurr",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "ciscoBusinessOwner",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "infCurrency",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "infCurrencyHrlyRateFte",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "actualProjM1DiffUsd",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "actualProjM2DiffUsd",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "actualProjM3DiffUsd",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "fiscalQuarterName",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "vendorLocation",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "method",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "actualMilestoneM1Per",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "actualMilestoneM2Per",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "actualMilestoneM3Per",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "milestoneValueM1Usd",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "infMStonValM1NonUsdCur",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "milestoneValueM2Usd",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "infMStonValM2NonUsdCur",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "milestoneValueM3Usd",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "infMStonValM3NonUsdCur",
+            "fieldType": "Double"
+        },
+        {
+            "fieldName": "cnxChrAgentNumWdnmCases",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "cnvChrStaffHrsWdnmCases",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "otherVolumeRateTbp",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "otRate",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "otSpendM1",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "otSpendM2",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "otSpendM3",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "poAmountUsd",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "infPoAmountNonUsd",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "poNumber",
+            "fieldType": "String"
+        },
+        {
+            "fieldName": "projBillableHeadsM1Fte",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "projBillableHeadsM2Fte",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "projBillableHeadsM3Fte",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "projectedBillableHrsM1Ph",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "projectedBillableHrsM2Ph",
+            "fieldType": "Integer"
+        },
+        {
+            "fieldName": "projectedBillableHrsM3Ph",
+            "fieldType": "Integer"
+        }
+    ],
+    "relationships": [],
+    "changelogDate": "20190110111208",
+    "entityTableName": "hcbt_model",
+    "dto": "mapstruct",
+    "pagination": "no",
+    "service": "serviceImpl",
+    "jpaMetamodelFiltering": false,
+    "fluentMethods": true,
+    "clientRootFolder": "",
+    "applications": "*"
+}
